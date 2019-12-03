@@ -19,7 +19,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/uber/jaeger-client-go"
+	"github.com/welcome112s/jaeger-client-go"
 )
 
 const tagMatchingStrategy = `

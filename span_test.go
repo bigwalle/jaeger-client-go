@@ -24,7 +24,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/uber/jaeger-client-go/internal/throttler"
+	"github.com/welcome112s/jaeger-client-go/internal/throttler"
 )
 
 func TestBaggageIterator(t *testing.T) {

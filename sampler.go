@@ -19,8 +19,8 @@ import (
 	"math"
 	"sync"
 
-	"github.com/uber/jaeger-client-go/thrift-gen/sampling"
-	"github.com/uber/jaeger-client-go/utils"
+	"github.com/welcome112s/jaeger-client-go/thrift-gen/sampling"
+	"github.com/welcome112s/jaeger-client-go/utils"
 )
 
 const (

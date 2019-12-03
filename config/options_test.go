@@ -23,7 +23,7 @@ import (
 	"github.com/uber/jaeger-lib/metrics"
 	"github.com/uber/jaeger-lib/metrics/metricstest"
 
-	"github.com/uber/jaeger-client-go"
+	"github.com/welcome112s/jaeger-client-go"
 )
 
 func TestApplyOptions(t *testing.T) {

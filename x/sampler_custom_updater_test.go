@@ -23,9 +23,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/uber/jaeger-client-go"
-	"github.com/uber/jaeger-client-go/testutils"
-	"github.com/uber/jaeger-client-go/thrift-gen/sampling"
+	"github.com/welcome112s/jaeger-client-go"
+	"github.com/welcome112s/jaeger-client-go/testutils"
+	"github.com/welcome112s/jaeger-client-go/thrift-gen/sampling"
 )
 
 type customSamplingStrategyResponse struct {

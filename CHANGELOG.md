@@ -183,11 +183,11 @@ Minor patch via https://github.com/jaegertracing/jaeger-client-go/pull/468
 2.7.0 (2017-06-21)
 ------------------
 
-- Fix rate limiter balance [#135](https://github.com/uber/jaeger-client-go/pull/135) [#140](https://github.com/uber/jaeger-client-go/pull/140)
-- Default client to send Jaeger.thrift [#147](https://github.com/uber/jaeger-client-go/pull/147)
-- Save baggage in span [#153](https://github.com/uber/jaeger-client-go/pull/153)
-- Move reporter.queueLength to the top of the struct to guarantee 64bit alignment [#158](https://github.com/uber/jaeger-client-go/pull/158)
-- Support HTTP transport with jaeger.thrift [#161](https://github.com/uber/jaeger-client-go/pull/161)
+- Fix rate limiter balance [#135](https://github.com/welcome112s/jaeger-client-go/pull/135) [#140](https://github.com/welcome112s/jaeger-client-go/pull/140)
+- Default client to send Jaeger.thrift [#147](https://github.com/welcome112s/jaeger-client-go/pull/147)
+- Save baggage in span [#153](https://github.com/welcome112s/jaeger-client-go/pull/153)
+- Move reporter.queueLength to the top of the struct to guarantee 64bit alignment [#158](https://github.com/welcome112s/jaeger-client-go/pull/158)
+- Support HTTP transport with jaeger.thrift [#161](https://github.com/welcome112s/jaeger-client-go/pull/161)
 
 
 2.6.0 (2017-03-28)
@@ -199,43 +199,43 @@ Minor patch via https://github.com/jaegertracing/jaeger-client-go/pull/468
 2.5.0 (2017-03-23)
 ------------------
 
-- Split request latency metric by success/failure [#123](https://github.com/uber/jaeger-client-go/pull/123)
-- Add mutex to adaptive sampler and fix race condition [#124](https://github.com/uber/jaeger-client-go/pull/124)
-- Fix rate limiter panic [#125](https://github.com/uber/jaeger-client-go/pull/125)
+- Split request latency metric by success/failure [#123](https://github.com/welcome112s/jaeger-client-go/pull/123)
+- Add mutex to adaptive sampler and fix race condition [#124](https://github.com/welcome112s/jaeger-client-go/pull/124)
+- Fix rate limiter panic [#125](https://github.com/welcome112s/jaeger-client-go/pull/125)
 
 
 2.4.0 (2017-03-21)
 ------------------
 
-- Remove `_ms` suffix from request latency metric name [#121](https://github.com/uber/jaeger-client-go/pull/121)
-- Rename all metrics to "request" and "http_request" and use tags for other dimensions [#121](https://github.com/uber/jaeger-client-go/pull/121)
+- Remove `_ms` suffix from request latency metric name [#121](https://github.com/welcome112s/jaeger-client-go/pull/121)
+- Rename all metrics to "request" and "http_request" and use tags for other dimensions [#121](https://github.com/welcome112s/jaeger-client-go/pull/121)
 
 
 2.3.0 (2017-03-20)
 ------------------
 
-- Make Span type public to allow access to non-std methods for testing [#117](https://github.com/uber/jaeger-client-go/pull/117)
-- Add a structured way to extract traces for logging with zap [#118](https://github.com/uber/jaeger-client-go/pull/118)
+- Make Span type public to allow access to non-std methods for testing [#117](https://github.com/welcome112s/jaeger-client-go/pull/117)
+- Add a structured way to extract traces for logging with zap [#118](https://github.com/welcome112s/jaeger-client-go/pull/118)
 
 
 2.2.1 (2017-03-14)
 ------------------
 
-- Fix panic caused by updating the remote sampler from adaptive sampler to any other sampler type (https://github.com/uber/jaeger-client-go/pull/111)
+- Fix panic caused by updating the remote sampler from adaptive sampler to any other sampler type (https://github.com/welcome112s/jaeger-client-go/pull/111)
 
 
 2.2.0 (2017-03-10)
 ------------------
 
-- Introduce Observer and SpanObserver (https://github.com/uber/jaeger-client-go/pull/94)
-- Add RPC metrics emitter as Observer/SpanObserver (https://github.com/uber/jaeger-client-go/pull/103)
+- Introduce Observer and SpanObserver (https://github.com/welcome112s/jaeger-client-go/pull/94)
+- Add RPC metrics emitter as Observer/SpanObserver (https://github.com/welcome112s/jaeger-client-go/pull/103)
 
 
 2.1.2 (2017-02-27)
 -------------------
 
-- Fix leaky bucket bug (https://github.com/uber/jaeger-client-go/pull/99)
-- Fix zap logger Infof (https://github.com/uber/jaeger-client-go/pull/100)
+- Fix leaky bucket bug (https://github.com/welcome112s/jaeger-client-go/pull/99)
+- Fix zap logger Infof (https://github.com/welcome112s/jaeger-client-go/pull/100)
 - Add tracer initialization godoc examples
 
 

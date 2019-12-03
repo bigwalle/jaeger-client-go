@@ -1,4 +1,4 @@
-module github.com/uber/jaeger-client-go
+module github.com/welcome112s/jaeger-client-go
 
 go 1.13
 

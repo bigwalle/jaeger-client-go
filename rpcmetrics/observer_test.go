@@ -24,7 +24,7 @@ import (
 	u "github.com/uber/jaeger-lib/metrics/metricstest"
 
 	"github.com/opentracing/opentracing-go/ext"
-	jaeger "github.com/uber/jaeger-client-go"
+	jaeger "github.com/welcome112s/jaeger-client-go"
 )
 
 func ExampleObserver() {

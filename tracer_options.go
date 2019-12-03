@@ -19,8 +19,8 @@ import (
 
 	"github.com/opentracing/opentracing-go"
 
-	"github.com/uber/jaeger-client-go/internal/baggage"
-	"github.com/uber/jaeger-client-go/internal/throttler"
+	"github.com/welcome112s/jaeger-client-go/internal/baggage"
+	"github.com/welcome112s/jaeger-client-go/internal/throttler"
 )
 
 // TracerOption is a function that sets some option on the tracer
