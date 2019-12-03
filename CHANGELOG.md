@@ -46,7 +46,7 @@ Minor patch via https://github.com/jaegertracing/jaeger-client-go/pull/468
 ## Minor patches
 
 - Expose Sampler on Tracer and accept sampler options via Configuration (#460) -- Yuri Shkuro
-- Fix github.com/uber-go/atomic import (#464) -- Yuri Shkuro
+- Fix github.com/welcome112s-go/atomic import (#464) -- Yuri Shkuro
 - Add nodejs to crossdock tests (#441) -- Bhavin Gandhi
 - Bump Go compiler version to 1.13 (#453) -- Yuri Shkuro
 
@@ -248,7 +248,7 @@ Minor patch via https://github.com/jaegertracing/jaeger-client-go/pull/468
 2.1.0 (2017-02-17)
 -------------------
 
-- Add adapter for zap.Logger (https://github.com/uber-go/zap)
+- Add adapter for zap.Logger (https://github.com/welcome112s-go/zap)
 - Move logging API to ./log/ package
 
 
@@ -259,7 +259,7 @@ Minor patch via https://github.com/jaegertracing/jaeger-client-go/pull/468
 - Support 128bit Trace IDs
 - Change trace/span IDs from uint64 to strong types TraceID and SpanID
 - Add Zipkin HTTP B3 Propagation format support #72
-- Rip out existing metrics and use github.com/uber/jaeger-lib/metrics
+- Rip out existing metrics and use github.com/welcome112s/jaeger-lib/metrics
 - Change API for tracer, reporter, sampler initialization
 
 

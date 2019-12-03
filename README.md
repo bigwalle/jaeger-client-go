@@ -5,7 +5,7 @@
 Instrumentation library that implements an
 [OpenTracing Go](https://github.com/opentracing/opentracing-go) Tracer for Jaeger (https://jaegertracing.io).
 
-**IMPORTANT**: The library's import path is based on its original location under `github.com/uber`. Do not try to import it as `github.com/jaegertracing`, it will not compile. We might revisit this in the next major release.
+**IMPORTANT**: The library's import path is based on its original location under `github.com/welcome112s`. Do not try to import it as `github.com/jaegertracing`, it will not compile. We might revisit this in the next major release.
   * :white_check_mark: `import "github.com/welcome112s/jaeger-client-go"`
   * :x: `import "github.com/jaegertracing/jaeger-client-go"`
 
@@ -100,14 +100,14 @@ example: `name:jaeger.traces, state:started, sampled:y`. See [metrics.go](./metr
 file for the full list and descriptions of emitted metrics.
 
 The monitoring backend is represented by the `metrics.Factory` interface from package
-[`"github.com/uber/jaeger-lib/metrics"`](https://github.com/jaegertracing/jaeger-lib/tree/master/metrics).  An implementation
+[`"github.com/welcome112s/jaeger-lib/metrics"`](https://github.com/jaegertracing/jaeger-lib/tree/master/metrics).  An implementation
 of that interface can be passed as an option to either the Configuration object or the Tracer
 constructor, for example:
 
 ```go
 import (
     "github.com/welcome112s/jaeger-client-go/config"
-    "github.com/uber/jaeger-lib/metrics/prometheus"
+    "github.com/welcome112s/jaeger-lib/metrics/prometheus"
 )
 
     metricsFactory := prometheus.New()
@@ -129,7 +129,7 @@ by the [Logger](logger.go) interface. A logger instance implementing
 this interface can be set on the `Config` object before calling the
 `New` method.
 
-Besides the [zap](https://github.com/uber-go/zap) implementation
+Besides the [zap](https://github.com/welcome112s-go/zap) implementation
 bundled with this package there is also a [go-kit](https://github.com/go-kit/kit)
 one in the [jaeger-lib](https://github.com/jaegertracing/jaeger-lib) repository.
 

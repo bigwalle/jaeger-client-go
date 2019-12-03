@@ -40,7 +40,7 @@ func ExampleConfiguration_InitGlobalTracer_testing() {
 	}
 
 	// Example logger and metrics factory. Use github.com/welcome112s/jaeger-client-go/log
-	// and github.com/uber/jaeger-lib/metrics respectively to bind to real logging and metrics
+	// and github.com/welcome112s/jaeger-lib/metrics respectively to bind to real logging and metrics
 	// frameworks.
 	jLogger := jaegerlog.StdLogger
 	jMetricsFactory := metrics.NullFactory
@@ -65,7 +65,7 @@ func ExampleConfiguration_InitGlobalTracer_production() {
 	cfg := jaegercfg.Configuration{}
 
 	// Example logger and metrics factory. Use github.com/welcome112s/jaeger-client-go/log
-	// and github.com/uber/jaeger-lib/metrics respectively to bind to real logging and metrics
+	// and github.com/welcome112s/jaeger-lib/metrics respectively to bind to real logging and metrics
 	// frameworks.
 	jLogger := jaegerlog.StdLogger
 	jMetricsFactory := metrics.NullFactory

@@ -62,9 +62,9 @@ imports:
   - assert
   - require
   - suite
-- name: github.com/uber-go/atomic
+- name: github.com/welcome112s-go/atomic
   version: df976f2515e274675050de7b3f42545de80594fd
-- name: github.com/uber/jaeger-lib
+- name: github.com/welcome112s/jaeger-lib
   version: a87ae9d84fb038a8d79266298970720be7c80fcd
   subpackages:
   - metrics

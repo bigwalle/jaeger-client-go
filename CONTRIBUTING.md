@@ -25,8 +25,8 @@ To get started, make sure you clone the Git repository into the correct location
 `github.com/welcome112s/jaeger-client-go` relative to `$GOPATH`:
 
 ```
-mkdir -p $GOPATH/src/github.com/uber
-cd $GOPATH/src/github.com/uber
+mkdir -p $GOPATH/src/github.com/welcome112s
+cd $GOPATH/src/github.com/welcome112s
 git clone git@github.com:jaegertracing/jaeger-client-go.git jaeger-client-go
 cd jaeger-client-go
 git submodule update --init --recursive
@@ -52,7 +52,7 @@ For example:
 import (
 	"fmt"
 
-	"github.com/uber/jaeger-lib/metrics"
+	"github.com/welcome112s/jaeger-lib/metrics"
 	"go.uber.org/zap"
 
 	"github.com/welcome112s/jaeger-client-go/config"
