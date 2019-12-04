@@ -201,6 +201,7 @@ func (c Configuration) NewTracer(options ...Option) (opentracing.Tracer, io.Clos
 		return nil, nil, errors.New("no service name provided")
 	}
 
+
 	opts := applyOptions(options...)
 	tracerMetrics := jaeger.NewMetrics(opts.metrics, nil)
 	if c.RPCMetrics {

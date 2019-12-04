@@ -15,10 +15,10 @@
 package jaeger
 
 import (
+	"github.com/uber/jaeger-lib/metrics/metricstest"
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/uber/jaeger-lib/metrics/metricstest"
 )
 
 func TestNewMetrics(t *testing.T) {

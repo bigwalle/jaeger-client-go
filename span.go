@@ -63,6 +63,8 @@ type Span struct {
 	References []Reference
 
 	Observer ContribSpanObserver
+
+	Progress Process
 }
 
 

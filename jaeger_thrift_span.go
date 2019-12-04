@@ -15,6 +15,8 @@
 package jaeger
 
 import (
+	"fmt"
+	"os"
 	"time"
 
 	"github.com/opentracing/opentracing-go"
@@ -49,16 +51,28 @@ func BuildJaegerThrift(span *Span) *j.Span {
 func BuildJaegerProcessThrift(span *Span) *j.Process {
 	span.Lock()
 	defer span.Unlock()
-	return buildJaegerProcessThrift(span.TracerV1)
+	return buildJaegerProcessThrift(span)
 }
 
-func buildJaegerProcessThrift(tracer *Tracer) *j.Process {
-	process := &j.Process{
-		ServiceName: tracer.serviceName,
-		Tags:        buildTags(tracer.tags, tracer.options.maxTagValueLength),
+func buildJaegerProcessThrift(span *Span) *j.Process {
+	var tags []Tag
+	// Set tracer-level tags
+	tags = append(tags, Tag{key: JaegerClientVersionTagKey, value: JaegerClientVersion})
+	if hostname, err := os.Hostname(); err == nil {
+		tags = append(tags, Tag{key: TracerHostnameTagKey, value: hostname})
 	}
-	if tracer.process.UUID != "" {
-		process.Tags = append(process.Tags, &j.Tag{Key: TracerUUIDTagKey, VStr: &tracer.process.UUID, VType: j.TagType_STRING})
+	if ip, err := utils.HostIP(); err == nil {
+		tags = append(tags, Tag{key: TracerIPTagKey, value: ip.String()})
+	} else {
+		fmt.Printf("Unable to determine this host's IP address: " + err.Error())
+	}
+
+	process := &j.Process{
+		ServiceName: span.serviceName(),
+		Tags:        buildTags(tags, DefaultMaxTagValueLength),
+	}
+	if span.Progress.UUID != "" {
+		process.Tags = append(process.Tags, &j.Tag{Key: TracerUUIDTagKey, VStr: &span.Progress.UUID, VType: j.TagType_STRING})
 	}
 	return process
 }
