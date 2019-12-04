@@ -65,6 +65,8 @@ type Span struct {
 	Observer ContribSpanObserver
 
 	Progress Process
+
+	ServiceName string
 }
 
 
@@ -351,7 +353,7 @@ func (s *Span) reset() {
 }
 
 func (s *Span) serviceName() string {
-	return s.TracerV1.serviceName
+	return s.ServiceName
 }
 
 func (s *Span) applySamplingDecision(decision SamplingDecision, lock bool) {
