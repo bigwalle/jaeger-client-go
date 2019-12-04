@@ -40,7 +40,7 @@ func BuildJaegerThrift(span *Span) *j.Span {
 		Flags:         int32(span.ContextV1.SamplingState.flags()),
 		StartTime:     startTime,
 		Duration:      duration,
-		Tags:          buildTags(span.Tags, span.TracerV1.options.maxTagValueLength),
+		Tags:          buildTags(span.Tags, DefaultMaxTagValueLength),
 		Logs:          buildLogs(span.Logs),
 		References:    buildReferences(span.References),
 	}
